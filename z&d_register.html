@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Registreren</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/z&d_register.css') }}">
+    </head>
+
+    <body>
+        <header>
+            <div class="menu">
+                <button class="menubtn">Menu</button>
+                <div class = "menu-content">
+                    <a href="{{ url_for('index') }}">Home</a>
+                    <a href="{{ url_for('login') }}">Inloggen</a>
+                    <a href="#">Aanbod</a>
+                    <a href="#">Over Ons</a>
+                </div>
+            </div>
+        </header>
+
+        <h1>Registreren</h1>
+
+        <form method="POST">
+            <label for="name">Naam</label>
+            <input type="text" placeholder="uw naam" name="name">
+
+            <label for="email">Email</label>
+            <input type="email" placeholder="uw emailadres" name="email">
+
+            <input type="submit" name="submit" value="Versturen">
+        </form>
+    </body>
+</html>
